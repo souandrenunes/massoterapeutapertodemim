@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massagem DOGA | Relaxante Indiana por Gabriel</title>
+    <meta name="description" content="Massagem Relaxante Indiana a domicílio. Presença, Intenção e Cuidado em Cada Toque.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0f16;
+            --bg-lighter: #111924;
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--bg-dark); 
+            color: var(--text-main); 
+            line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        h1, h2, h3, .serif { 
+            font-family: 'Playfair Display', serif; 
+            font-weight: 400; 
+            color: var(--gold); 
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        
+        .container { 
+            width: 100%; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 0 25px; 
+        }
+        
+        section { padding: 100px 0; }
+        
+        .btn-gold { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #b8860b, #d4af37); 
+            color: #000; 
+            padding: 18px 40px; 
+            border-radius: 50px; 
+            font-weight: 600; 
+            font-size: 1.1rem; 
+            letter-spacing: 1px;
+            text-transform: uppercase; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            margin-top: 30px;
+        }
+        .btn-gold:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero { 
+            text-align: center; 
+            padding: 120px 20px; 
+            background: radial-gradient(ellipse at top, #1a2536 0%, #0a0f16 80%); 
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .hero .logo-text { font-size: 1rem; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 20px; display: block; }
+        .hero h1 { font-size: 4.5rem; letter-spacing: 2px; margin-bottom: 10px; line-height: 1.1; }
+        .hero h2 { font-size: 1.8rem; color: var(--text-main); margin-bottom: 30px; }
+        .hero p.tagline { font-size: 1.4rem; font-style: italic; color: var(--gold-light); margin-bottom: 40px; }
+
+        /* --- PAIN POINTS --- */
+        .pain-points { background-color: var(--bg-lighter); text-align: center; }
+        .pain-points .text-block { max-width: 700px; margin: 0 auto; }
+        .pain-points p { font-size: 1.2rem; margin-bottom: 15px; color: var(--text-muted); }
+        .pain-points .highlight { color: var(--gold); font-size: 2.2rem; margin: 60px 0 30px; line-height: 1.3; }
+
+        /* --- BENEFITS --- */
+        .benefits .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .benefits-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+        }
+        .benefit-card { 
+            background: rgba(255, 255, 255, 0.02); 
+            padding: 40px 30px; 
+            border-radius: 12px; 
+            text-align: center; 
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .benefit-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .benefit-card .icon { font-size: 2.5rem; margin-bottom: 20px; }
+        .benefit-card h3 { font-size: 1.4rem; margin-bottom: 15px; }
+        .benefit-card p { font-size: 1rem; color: var(--text-muted); }
+
+        /* --- ABOUT GABRIEL --- */
+        .about { background-color: var(--bg-lighter); }
+        .about-flex { display: flex; flex-wrap: wrap; gap: 60px; align-items: center; }
+        .about-text { flex: 1; min-width: 320px; }
+        .about-text h2 { font-size: 2.5rem; margin-bottom: 30px; }
+        .about-text p { margin-bottom: 20px; font-size: 1.1rem; }
+        .mission-box { border-left: 3px solid var(--gold); padding-left: 20px; margin-top: 30px; font-style: italic; }
+        
+        .about-image { flex: 1; min-width: 320px; text-align: center; }
+        .about-image .img-placeholder { 
+            width: 100%; 
+            height: 500px; 
+            background: #1a2536; 
+            border-radius: 16px; 
+            border: 1px solid rgba(212, 175, 55, 0.3); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--gold); 
+            font-style: italic;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* --- LOGISTICS & PRICING --- */
+        .logistics-pricing { padding-top: 100px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 50px; }
+        
+        .info-box { background: rgba(255,255,255,0.02); padding: 40px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.1); }
+        .info-box h3 { font-size: 1.8rem; margin-bottom: 25px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 15px; }
+        
+        .locations-list { columns: 2; margin-top: 15px; font-size: 0.95rem; color: var(--text-muted); }
+        .locations-list li { margin-bottom: 8px; list-style: none; }
+        
+        .price-box { 
+            border: 2px solid var(--gold); 
+            padding: 50px 40px; 
+            text-align: center; 
+            border-radius: 12px; 
+            background: linear-gradient(180deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
+        }
+        .price-box .price { font-size: 4rem; color: var(--gold); font-family: 'Playfair Display', serif; margin: 10px 0; line-height: 1; }
+        .price-box .per-hour { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; display: block; }
+        
+        ul.check-list { list-style: none; text-align: left; margin-top: 30px; }
+        ul.check-list li { margin-bottom: 15px; position: relative; padding-left: 35px; font-size: 1.1rem; }
+        ul.check-list li::before { content: '✓'; color: var(--gold); position: absolute; left: 0; font-weight: bold; font-size: 1.4rem; top: -2px;}
+
+        /* --- FOOTER / CTA --- */
+        .cta-section { 
+            text-align: center; 
+            padding: 100px 20px; 
+            background: radial-gradient(ellipse at center, #1a2536 0%, #0a0f16 100%); 
+            border-top: 1px solid rgba(212, 175, 55, 0.1); 
+        }
+        .cta-section h2 { font-size: 2.8rem; margin-bottom: 20px; }
+        
+        .contact-info { margin-top: 60px; font-size: 1.2rem; display: flex; flex-direction: column; gap: 15px; align-items: center; }
+        .contact-info a { display: flex; align-items: center; gap: 10px; transition: color 0.3s ease; }
+        .contact-info a:hover { color: var(--gold); }
+        .contact-info span { color: var(--gold); }
+        
+        .footer-credits { margin-top: 80px; font-size: 0.9rem; color: var(--text-muted); }
+
+        @media(max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .hero h2 { font-size: 1.4rem; }
+            .pain-points .highlight { font-size: 1.8rem; }
+            .about-text h2, .benefits .section-title, .cta-section h2 { font-size: 2rem; }
+            .price-box .price { font-size: 3rem; }
+            .locations-list { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <span class="logo-text">ॐ Massagem DOGA</span>
+            <h1>MASSAGEM DOGA</h1>
+            <h2>Massagem Relaxante Indiana</h2>
+            <p class="tagline">"Presença, Intenção e Cuidado em Cada Toque"</p>
+            <a href="https://wa.me/5521976638495" class="btn-gold">Agende Seu Momento</a>
+        </div>
+    </header>
+
+    <!-- PAIN POINTS -->
+    <section class="pain-points">
+        <div class="container text-block">
+            <p>Você cuida de tudo.</p>
+            <p>Do trabalho. Da casa. Da família.</p>
+            <p>Dos compromissos. Dos problemas que aparecem todos os dias.</p>
+            <p>Você é forte. Você resolve. Você segue em frente.</p>
+            
+            <h2 class="highlight">Mas existe uma pergunta que talvez você não faça há muito tempo:<br>Quem está cuidando de você?</h2>
+            
+            <p>Talvez seu corpo já esteja tentando responder.</p>
+            <p>Através do cansaço. Da tensão nos ombros. Das noites mal dormidas.</p>
+            <p>Da mente acelerada. Da sensação de estar sempre fazendo muito e sentindo pouco.</p>
+            <p>Você continua funcionando. Mas, lá no fundo, sente falta de algo.</p>
+            <p>Sente falta de você.</p>
+        </div>
+    </section>
+
+    <!-- SOLUTION / BENEFITS -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">E se existisse um momento só seu?</h2>
+            <p style="text-align: center; max-width: 700px; margin: -40px auto 50px; font-size: 1.1rem; color: var(--text-muted);">
+                Sem cobranças. Sem pressa. Sem interrupções.<br>
+                Um momento para respirar. Para desacelerar. Para simplesmente existir.<br>
+                Foi para isso que nasceu a Massagem DOGA.
+            </p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">💧</div>
+                    <h3>Relaxamento Profundo</h3>
+                    <p>Uma experiência criada para liberar o peso acumulado no corpo e na mente.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🧘‍♀️</div>
+                    <h3>Alívio do Estresse</h3>
+                    <p>Liberação das tensões diárias, promovendo uma sensação imediata de tranquilidade.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🍃</div>
+                    <h3>Leveza e Circulação</h3>
+                    <p>Melhora a circulação sanguínea, trazendo uma sensação de leveza física e emocional.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">☯️</div>
+                    <h3>Equilíbrio e Reconexão</h3>
+                    <p>Realinhamento entre corpo e mente, ajudando você a se reconectar com sua própria essência.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="font-size: 1.2rem; font-style: italic;">"Cada atendimento é realizado com presença, intenção e respeito.<br>Porque você não é apenas mais uma cliente. Você é uma mulher que merece ser cuidada."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT GABRIEL -->
+    <section class="about">
+        <div class="container about-flex">
+            <div class="about-image">
+                <div class="img-placeholder">
+                    [ Foto de Gabriel - Profissional ]
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Quem é Gabriel?</h2>
+                <p>Meu nome é Gabriel.</p>
+                <p>Durante minha própria jornada de autoconhecimento, percebi algo que transformou minha forma de enxergar a vida: <strong>O corpo guarda aquilo que muitas vezes a mente tenta ignorar.</strong></p>
+                <p>Ansiedade. Preocupações. Sobrecarga. Emoções não processadas.</p>
+                <p>Foi através do contato com práticas de presença, meditação e terapias corporais que descobri o poder transformador do toque consciente.</p>
+                
+                <div class="mission-box">
+                    <p style="margin-bottom: 0; color: var(--gold-light);"><strong>Minha Missão:</strong><br>Inspirar mulheres a se reconectarem com sua verdadeira identidade. A aliviar o peso do dia a dia. A se sentirem mais leves. Mais vivas. Mais realizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGISTICS & PRICING -->
+    <section class="logistics-pricing">
+        <div class="container grid-2">
+            
+            <div class="info-box">
+                <h3>Como Funciona?</h3>
+                <p><strong>Atendimento à domicílio</strong></p>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Você recebe a experiência no conforto e segurança do seu próprio ambiente.</p>
+                
+                <ul class="check-list" style="margin-top:0;">
+                    <li>Atendimento com hora marcada</li>
+                    <li>Discreto e Respeitoso</li>
+                    <li>Experiência Personalizada</li>
+                </ul>
+
+                <h3 style="margin-top: 40px;">Regiões Atendidas</h3>
+                <p><strong>Rio de Janeiro (Zona Sul):</strong></p>
+                <ul class="locations-list">
+                    <li>Botafogo</li>
+                    <li>Copacabana</li>
+                    <li>Leme</li>
+                    <li>Ipanema</li>
+                    <li>Leblon</li>
+                    <li>Humaitá</li>
+                    <li>Lagoa</li>
+                    <li>Gávea</li>
+                    <li>Jardim Botânico</li>
+                    <li>Flamengo</li>
+                    <li>Laranjeiras</li>
+                    <li>Catete</li>
+                    <li>Glória</li>
+                    <li>Cosme Velho</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Outras Localidades:</strong></p>
+                <ul class="locations-list">
+                    <li>Niterói</li>
+                    <li>Jacareí</li>
+                    <li>São José dos Campos</li>
+                    <li>Sorocaba</li>
+                    <li>Votorantim</li>
+                </ul>
+            </div>
+
+            <div class="price-box">
+                <h3 class="serif" style="font-size: 2rem;">Investimento</h3>
+                <div class="price">R$ 150</div>
+                <span class="per-hour">por hora</span>
+                
+                <p style="font-style: italic; color: var(--text-muted); margin-bottom: 30px;">
+                    Uma experiência exclusiva de cuidado, relaxamento e reconexão.
+                </p>
+
+                <div style="text-align: left;">
+                    <h4 style="color: var(--text-main); font-size: 1.2rem; margin-bottom: 15px;">O que você vai sentir:</h4>
+                    <ul class="check-list" style="margin-top: 0; font-size: 1rem;">
+                        <li>Corpo mais leve</li>
+                        <li>Mente mais tranquila</li>
+                        <li>Menos tensão e estresse</li>
+                        <li>Sensação de acolhimento</li>
+                        <li>Mais presença no momento presente</li>
+                        <li>Reconexão consigo mesma</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/5521976638495" class="btn-gold" style="width: 100%;">Agendar Agora</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER / CTA -->
+    <footer class="cta-section">
+        <div class="container">
+            <h2>Talvez Este Seja o Seu Momento</h2>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;">
+                Se você sente que está carregando mais do que deveria...<br>
+                Se sente que faz muito pelos outros e pouco por si mesma...<br>
+                Se deseja parar por alguns instantes e voltar a ouvir sua própria essência...<br>
+                <strong>A Massagem DOGA foi criada para você.</strong>
+            </p>
+            
+            <a href="https://wa.me/5521976638495" class="btn-gold" style="font-size: 1.3rem; padding: 20px 50px;">Permita-se Voltar Para Você</a>
+            
+            <div class="contact-info">
+                <a href="https://wa.me/5521976638495"><span>WhatsApp:</span> (21) 97663-8495</a>
+                <a href="https://instagram.com/massagemdoga"><span>Instagram:</span> @massagemdoga</a>
+                <a href="mailto:massagemdoga@gmail.com"><span>E-mail:</span> massagemdoga@gmail.com</a>
+            </div>
+            
+            <p class="footer-credits">
+                MASSAGEM DOGA por Gabriel &bull; Presença, Intenção e Cuidado em Cada Toque
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
